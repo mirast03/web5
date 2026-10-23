@@ -1,0 +1,223 @@
+/* ===== General ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+  color: #222222;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+.navbar a {
+  padding: 8px 14px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #eeeeee;
+}
+
+.navbar a.active {
+  background-color: #4040f5;
+  color: #ffffff;
+}
+
+/* ===== Cards (one card = one task) ===== */
+.card {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* ===== Buttons and fields ===== */
+button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #4040f5;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f2fd0;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #bbbbbb;
+  background-color: #eeeeee;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+/* ===== Task 3: style box ===== */
+.style-box {
+  margin-bottom: 12px;
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/* ===== Task 4: list ===== */
+#itemList {
+  min-height: 24px;
+}
+
+/* ===== Task 5: mouse box ===== */
+.hover-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 120px;
+  border: 1px solid #bbbbbb;
+  text-align: center;
+}
+
+/* ===== Task 7: calculator ===== */
+.calc-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.calc-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.calc-buttons button {
+  width: 48px;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+/* ===== Part 4: To-Do app ===== */
+.todo-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.todo-column {
+  flex: 1 1 320px;
+}
+
+.todo-column h2 {
+  margin-top: 0;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #ffffff;
+}
+
+.form-card label {
+  margin-bottom: 6px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.form-card input,
+.form-card textarea {
+  margin-bottom: 16px;
+}
+
+.form-card button {
+  align-self: flex-start;
+  width: 200px;
+  height: 50px;
+}
+
+.error {
+  min-height: 20px;
+  margin: 0 0 8px;
+  color: #cc0000;
+  font-size: 14px;
+}
+
+.task-card {
+  margin-bottom: 12px;
+  padding: 14px;
+  background-color: #ffffff;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #999999;
+}
+
+.task-header h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 17px;
+  word-break: break-word;
+}
+
+.task-card p {
+  margin: 12px 0 0;
+  color: #555555;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.small-btn {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.delete-btn {
+  background-color: #cc0000;
+}
+
+.delete-btn:hover {
+  background-color: #a30000;
+}
+
+/* completed task: strike-through */
+.task-card.done h3,
+.task-card.done p {
+  color: #888888;
+  text-decoration: line-through;
+}
+
+#emptyMessage {
+  color: #777777;
+}
