@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2 - DOM Manipulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Part 1. Introduction</a>
+    <a href="dom.html" class="active">Part 2. DOM</a>
+    <a href="events.html">Part 3. Events</a>
+    <a href="todo.html">Part 4. To-Do App</a>
+  </nav>
+
+  <main>
+    <h1>Part 2. DOM Manipulation</h1>
+
+    <!-- Task 2 -->
+    <section class="card">
+      <h2>Task 2. Changing Content</h2>
+      <p id="text">This is the first text. Click the button to change it.</p>
+      <button id="changeTextBtn">Change text</button>
+    </section>
+
+    <!-- Task 3 -->
+    <section class="card">
+      <h2>Task 3. Changing Styles</h2>
+      <div id="styleBox" class="style-box">
+        <p>This is the text inside the block.</p>
+      </div>
+      <button id="changeColorBtn">Change background color</button>
+      <button id="changeSizeBtn">Change font size</button>
+    </section>
+
+    <!-- Task 4 -->
+    <section class="card">
+      <h2>Task 4. Creating &amp; Removing Elements</h2>
+      <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+      <button id="addItemBtn">Add Item</button>
+      <button id="removeItemBtn">Remove Item</button>
+    </section>
+  </main>
+
+  <script src="dom.js"></script>
+</body>
+</html>
