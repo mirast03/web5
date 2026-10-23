@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 4 - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Part 1. Introduction</a>
+    <a href="dom.html">Part 2. DOM</a>
+    <a href="events.html">Part 3. Events</a>
+    <a href="todo.html" class="active">Part 4. To-Do App</a>
+  </nav>
+
+  <main>
+    <h1>Part 4. Mini Project &mdash; Interactive To-Do List</h1>
+
+    <div class="todo-layout">
+
+      <!-- Left column: the list of tasks -->
+      <section class="todo-column">
+        <h2>To-do list</h2>
+        <p id="emptyMessage">No tasks yet. Add your first task.</p>
+        <div id="taskList"></div>
+      </section>
+
+      <!-- Right column: the form -->
+      <section class="todo-column">
+        <h2>Add new task</h2>
+        <div class="form-card">
+          <label for="titleInput">* Title</label>
+          <input type="text" id="titleInput">
+
+          <label for="descInput">* Description</label>
+          <textarea id="descInput" rows="8"></textarea>
+
+          <p id="errorMessage" class="error"></p>
+          <button id="addTaskBtn">Add Task</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
