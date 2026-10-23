@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3 - Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Part 1. Introduction</a>
+    <a href="dom.html">Part 2. DOM</a>
+    <a href="events.html" class="active">Part 3. Events</a>
+    <a href="todo.html">Part 4. To-Do App</a>
+  </nav>
+
+  <main>
+    <h1>Part 3. Events</h1>
+
+    <!-- Task 5 -->
+    <section class="card">
+      <h2>Task 5. Mouse Events</h2>
+      <div id="hoverBox" class="hover-box">Move the mouse over this box</div>
+    </section>
+
+    <!-- Task 6 -->
+    <section class="card">
+      <h2>Task 6. Keyboard Events</h2>
+      <input type="text" id="typeInput" placeholder="Type something...">
+      <p>You typed: <span id="typedText"></span></p>
+    </section>
+
+    <!-- Task 7 -->
+    <section class="card">
+      <h2>Task 7. Calculator</h2>
+      <div class="calc-fields">
+        <input type="number" id="num1" placeholder="First number">
+        <input type="number" id="num2" placeholder="Second number">
+      </div>
+      <div class="calc-buttons">
+        <button id="addBtn">+</button>
+        <button id="subtractBtn">&minus;</button>
+        <button id="multiplyBtn">&times;</button>
+        <button id="divideBtn">&divide;</button>
+      </div>
+      <p>Result: <strong id="calcResult">-</strong></p>
+    </section>
+  </main>
+
+  <script src="events.js"></script>
+</body>
+</html>
