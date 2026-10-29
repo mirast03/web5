@@ -1,10 +1,5 @@
 # Assignment #5. JavaScript Basics (DOM Manipulation & Events)
 
-**Student:** Your Full Name
-**Group:** Your Group
-
-**Live website:** https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/
-
 ## Description
 
 A small website with JavaScript tasks about the DOM and events.
